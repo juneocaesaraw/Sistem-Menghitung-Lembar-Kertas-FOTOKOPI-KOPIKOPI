@@ -1,0 +1,39 @@
+#   include <stdio.h>
+#   include<conio.h>
+int main (){
+    int Jumlah_Lembar, uang_Dibayar, Kembalian, harga;
+    start :
+    printf("======================================\n");
+    printf("SELAMAT DATANG DI FOTOKOPI KOPIKOPI :)\n");
+     printf("======================================\n");
+    
+
+    printf("Masukan Jumlah Lembar : ");
+    scanf("%d", &Jumlah_Lembar);
+
+    if (Jumlah_Lembar >= 100)
+    {
+        harga= Jumlah_Lembar * 100;
+    }
+    else{
+        harga= Jumlah_Lembar * 150;
+    }
+
+    printf("Total Harga = Rp.%d\n",harga);
+
+    printf("Masukan Uang Dibayar :Rp.");
+    
+    scanf("%d", &uang_Dibayar);
+    
+    Kembalian= uang_Dibayar-harga;
+
+    printf("Kembalian = Rp.%d\n", Kembalian);
+
+    printf("SEE YOUU :)\n");
+    printf("Tekan Enter Untuk Melanjutkan Transaksi\n");
+getch();
+system("cls");
+
+goto start ;
+    return 0;
+}
